@@ -1,0 +1,57 @@
+body {
+  background-color: #eeeeee;
+  color: #222222;
+}
+
+#root h1,
+#root p {
+  position: fixed;
+  font-family: 'Arvo', serif;
+  font-size: 48px;
+  left: 50%;
+  top: 50%;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#root h1 {
+  font-weight: 700;
+}
+
+#root p {
+  font-weight: 400;
+}
+
+#root.clicked h1 {
+  animation: right 4s infinite reverse;
+}
+
+#root.clicked p {
+  -webkit-animation: right 4s infinite;
+          animation: right 4s infinite;
+}
+
+@-webkit-keyframes right {
+  0% {
+    -webkit-transform: rotate(0) translate(-50%, -50%);
+            transform: rotate(0) translate(-50%, -50%);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) translate(-50%, -50%);
+            transform: rotate(360deg) translate(-50%, -50%);
+  }
+}
+
+@keyframes right {
+  0% {
+    -webkit-transform: rotate(0) translate(-50%, -50%);
+            transform: rotate(0) translate(-50%, -50%);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) translate(-50%, -50%);
+            transform: rotate(360deg) translate(-50%, -50%);
+  }
+}
+/*# sourceMappingURL=style.css.map */
